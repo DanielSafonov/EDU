@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task5</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+	<style type="text/css">
+	/* Общие стили */ 
+	*{
+		margin:0;padding:0;
+	}
+	html{
+		background: #e8e8e8;
+		font-family: 'PT Sans', sans-serif;
+		font-size: 120%;
+		color: #2a3744;
+	}
+
+	/*Главный контейнер*/
+	.main-wrapper{
+		width: 80%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 4em;
+	}
+
+	/* Контейнер блока и секции */
+	.block, .section{
+		background: #F5F8FA;
+		margin: 0 auto;
+		padding: 3em;
+		margin-bottom: 2em;
+		margin-top: 2em;
+	}
+
+	/* Последний блок */ 
+	.block:last-child{
+		margin-bottom: 4em;
+	}
+
+	/* Заголовок блока */
+	.block h1{
+		font-weight: 600;
+	}
+
+	/* Подзаголовок - зарплата и название компании */
+	.subheader{
+		font-weight: 300;
+	}
+
+	/* Строчный текст - описание вакансии */
+	.description{
+		margin-top: 1em;
+		text-align: justify;
+		font-size: 105%;
+	}
+
+	/* Ссылка перехода на hh для просмотра вакансии */
+	.description .vacancyLink{
+		float: right;
+		color: #0645AD;
+	}
+
+	/* Секция */
+	.section{
+		border: 0.6em solid #2a3744;
+		padding: 2em;
+	}
+
+	/* Количество найденных по запросу вакансий в секции */
+	.vacancies_count{
+		margin-top: 0.5em;
+		font-size: 120%;
+	}
+
+</style>
+</head>
+<body>
+	<div class="main-wrapper">
+
+		<div class="section" id="1">
+			<h2 class="request">Запрос</h2>
+			<p class="vacancies_count">7 вакансий найдено</p>
+		</div>
+	
+		<div class = "blocks">
+			<div class="block" id="1">
+				<h1 class="header">Заголовок</h1>
+				<h3 class="subheader"><span class="employer">Компания</span> | <span class="salary">Зарплата</span></h3>
+				<p class="description">
+					<span class="description-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span><br/><a class="vacancyLink" href="#">Подробнее</a>
+				</p>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
